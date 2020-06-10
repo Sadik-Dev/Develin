@@ -41,9 +41,7 @@ npm install --save-dev @angular-devkit/build-angular
 npm start
 ```
 
-5) 
-
-Ga naar http://localhost:4200/
+5) Ga naar http://localhost:4200/
 
 ## More Info
 
