@@ -1,7 +1,7 @@
  # Develin Web App 
 
 ## Wat is develin ?
-Develin is een web applicatie waarmee je de projecten van uw bedrijf kunt beheren door opdrachten toe te wijzen aan medewerkers en waarmee je ook de progressie kan volgen van de projecten.
+Develin is een web applicatie waarmee je projecten kunt beheren door opdrachten toe te wijzen aan medewerkers en de ontwikkeling van het project te volgen.
 
 In het systeem worden er 2 soorten gebruikers beschouwd de gewone medewerkers en de managers. Het verschil tussen beide is dat de manager projecten kan aan maken en kan opdrachten geven aan andere medewerkers.
 Een gewone medewerker kan enkel projecten waarop hij werkt bekijken en als hij opdrachten heeft kan hij deze beheren.
