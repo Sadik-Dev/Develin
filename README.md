@@ -46,7 +46,7 @@ npm start
 
 ## More Info
 
-Develin staat online op http://webfoliosadik.be/develin
+
 
 Inloggegevens kan je terug vinden in de Repository van de Back-end
 
