@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+
+
+
+
+.ProjectFrame{
+    background: rgba(255, 255, 255, 0.253);
+   height: 91vh;
+   margin-top: 1%;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    overflow-y: hidden;
+    font-family: 'Comfortaa', cursive;
+    justify-content: space-between;
+    
+}
+
+.layer{
+    margin: 5% 2% 0 2%;
+    height: 77vh;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    overflow-y: scroll;
+justify-content: stretch;
+
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #FF4771;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+.break{
+  width: 100%;
+  height: 40vh;
+}
+
+  /* Projet Box*/
+.project{
+    width: 22%;
+    margin: 3% 2% 5% 1%;
+    height: 35%;
+    background: url(/../../assets/images/waveBlue.png);
+    background-size: cover;
+    border-radius: 15px;
+    -webkit-box-shadow: -2px 10px 17px -2px rgba(0,0,0,0.49);
+    -moz-box-shadow: -2px 10px 17px -2px rgba(0,0,0,0.49);
+    box-shadow: -2px 10px 17px -2px rgba(0,0,0,0.49);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.project:hover{
+    margin-top: 2%;
+    transition-duration: 0.5s;
+    cursor: grab;
+}
+.project p{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+
+}
+
+.Thumb{
+height: 56%;
+position: relative;
+overflow: hidden;
+margin-top: 2%;
+}
+.Thumb p{
+    font-size: 1.4em;
+    text-align: left;
+    width: 98%;
+    margin-left: 3%;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.notifProject{
+  position: absolute;
+  width: 45%;
+  font-size: 1em;
+  color: black;
+  margin-left: 3%;
+  border-radius: 8px;
+  background: #FF4771;
+  height: auto;
+  margin: 2% 0% 0 5%;
+  padding: 1%;
+  display: none;
+}
+.img2{
+    width: 28px;
+    height: 28px;
+   margin-top: 0%;
+   margin-right: 3%;
+}
+.notifProject p{
+    width: auto;
+    font-size: 0.8em;
+    color: black;
+    margin-top: 0;
+    color: white;
+
+}
+
+.circle-wrap {
+    margin: 10px 0 0 25%;
+    width: 100px;
+    height: 100px;
+    background: #e6e2e7;
+    border-radius: 50%;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+  }
+  
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 100px, 100px, 50px);
+  }
+  
+  .circle-wrap .circle .mask .fill {
+    clip: rect(0px, 50px, 100px, 0px);
+    background-color: #28B19E;
+  }
+  
+
+  .circle-wrap .inside-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 100;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: #28B19E;
+    font-family: 'Montserrat';
+  }
+.deadlineP{
+ position: absolute;
+ top: -1000%;
+ left: 1%;
+    height: 5%;
+    width: 43%;
+    display: none;
+  }
+.deadlineP img{
+    width: 18px;
+    height: 17px;
+    margin: 0% 5px 0 0;
+
+
+}
+.deadlineP p{
+    width: fit-content;
+    margin: 0 2% 0 0;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.856);
+    font-weight: 600;
+    text-align: left;
+}
+
+.pInfo{
+    height: 20%;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Comfortaa', sans-serif;
+  margin-bottom: 1%;
+}
+.pInfo div{
+    width: 27%;
+    height: 100%;
+    margin: 2% 1% 1% 0%;
+    
+}
+.pInfo div p{
+  color: white;
+  font-weight: 500;
+  padding: 1px;
+}
+.pInfo div p:nth-child(1){
+    margin: 0 0 0 0;
+}
+.pInfo div :nth-child(2){
+    font-size: 1em;
+    margin: 0 0 0 0;
+}
+
+.img1{
+    width: 7%;
+    position: absolute;
+    right: 5%;
+    bottom: 1%;
+   
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}   
+
+
+
+
+
+
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill {
+  animation: fill ease-in-out 3s;
+}
+
+@keyframes fill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+
+.mainF{
+  display: flex;
+  flex-direction: row;
+  background: #92E191;
+  width: 30%;
+  border-radius: 5px;
+  height: 55%;
+  border: 2px solid #92E191;
+  overflow: hidden;
+  margin: 1% 0 0 1%;
+  transition-duration: 0.5s;
+}
+.mainF:hover{
+  background: rgba(40, 177, 159, 0.493);
+  cursor: pointer;
+  transition-duration: 0.5s;
+  border: 2px solid white;
+}
+.mainF img{
+  width: 14px;
+  height: 19px;
+  margin: auto  5% auto auto;
+
+}
+
+.mainF p{
+  font-size: 1em;
+  line-height: 2em;
+  height: fit-content;
+  margin: 0 auto 0 3%;
+  color: white;
+  text-transform: uppercase;
+}
+.filter{
+  user-select: none;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin: 2% 0 0 2.7%;
+  width: 30%;
+  overflow: hidden;
+  height: 50px;
+}
+.filter input{
+background: rgba(255, 255, 255, 0);
+border: 3px solid #43BF89;
+border-radius: 5px;
+width: 40%;
+height: 25px;
+margin: auto 0 auto 0%;
+display: inline-block;
+}
+.filter input::placeholder{
+  color: rgba(0, 0, 0, 0.733);
+  margin-left: 20%;
+  font-size: 1.1em;
+  font-family: 'Open Sans', sans-serif;
+}
+.filter input:focus{
+  outline-width: 0;
+
+}
+
+.filter button{
+  background: #28B19E;
+  border: 3px solid #28B19E;
+border-radius: 5px;
+  height: 32px;
+  width: 15%;
+color: white;
+font-weight: 600;
+font-family: 'Montserrat', cursive;
+  padding: 0 0 0 0;
+  text-transform: uppercase;
+  margin: auto 0 auto 5%;
+  display: inline-block;
+
+}
+.filter .content{
+  overflow: hidden;
+  width: 0%;
+  margin: 1% 0 0 1%;
+  transition-duration: 0.5s;
+  height: fit-content;
+}
+.filter button:focus{
+  outline: none;
+  background: rgba(0, 187, 109, 0.514);
+  border: 3px solid rgba(0, 187, 109, 0.514);
+
+}
+
+.filter button:nth-child(3){
+  background: rgba(0, 187, 109, 0);
+  color:#28B19E;
+}
+
+@keyframes spinner {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+}
+
+.advx{
+  position: absolute;
+}
+#dashboardP{
+  overflow: hidden;
+  z-index: 200;
+  display: flex;
+  /* color: black; */
+
+  border-radius: 35px;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.55);
+  transition-duration: 1s;
+  top: 50%;
+  position: absolute;
+  width: 0%;
+  height: 5vh;
+  left: 45%;
+}
+
+
+@media only screen and (max-width: 1920px) {
+
+  .project{
+    width: 30%;
+  }
+  .layer{
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+
+  .project{
+    width: 45%;
+    background-size: contain;
+    background-repeat: round;
+    height: 40%;
+  }
+  .layer{
+    height: 80vh;
+  }
+}

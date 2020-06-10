@@ -1,0 +1,65 @@
+<app-dashboard id="dashboardP"   [project]="selectedProject" ></app-dashboard>
+
+<div class="ProjectFrame flexRow">
+  <div class="filter">
+    <div class="mainF" data-cy="filterBox">
+      <img src="assets/images/filter.png">
+      <p>Filter</p>
+    </div>
+    <div class="content">
+      <input type="text"  data-cy="filterInput" (keyup)='filterProject$.next($event.target.value)' placeholder="Project Naam" #filter id="filterI">
+    
+  </div>
+  </div>
+    <div *ngIf="projects$ | async as projects" class="layer flexRow">
+      <div class="project" data-cy="projectCard" *ngFor="let localProject of projects | projectFilter: filterProjectName" (click)="openDashboard(localProject.id)">    
+        <div class="Thumb">
+        <p data-cy="project-title">{{localProject.name}}</p>
+    
+          <div class="circle-wrap">
+            <div class="circle" >
+              <div [ngStyle]="localProject.degreesOfProgression()" class="mask full">
+                <div  [ngStyle]="localProject.degreesOfProgression()" class="fill "></div>
+    
+
+              </div>
+              <div class="mask half">
+                <div [ngStyle]="localProject.degreesOfProgression()" class="fill"></div>
+    
+
+              </div>
+              <div  class="inside-circle" > {{localProject.progression}}% </div>
+            </div>
+          </div>
+        </div>
+        <div class="deadlineP flexRow">
+          <img src="assets/images/clock.png">
+          <p>{{localProject.deadline | date}}   >    {{localProject.timeRemain}} days left</p>
+        </div>
+        <div class="pInfo">
+          <div>
+            <p>{{localProject.employees.length}}</p>
+            <P>Medewerkers</P>
+          </div>
+          <div>
+            <p>{{localProject.tasks.length}}</p>
+            <P>Tasks</P>
+          </div>
+    
+          <div>
+            <img class="img1" src="assets/images/expand.png">
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="break">
+
+      </div>
+    </div>
+
+    </div>
+
+    <app-menu [loggedInUser]="loggedInUser"></app-menu>
+
+   
