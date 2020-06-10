@@ -1,0 +1,174 @@
+.login {
+    width: 20%;
+    margin: auto auto auto auto;
+    font-size: 16px;
+    font-family: 'Comfortaa', 'Calibri';
+    position: absolute;
+    left: 36%;
+    top: 30%;
+    border-radius: 10px;
+    height: 45%;
+    background: linear-gradient(146deg, rgba(0,189,153,1) 0%, rgba(0, 170, 182, 0.47) 100%);
+    background: url(/../../assets/images/dashback.png);
+    box-shadow: 0px 0px 33px -5px rgba(0,0,0,0.55);
+}
+  
+  .login-header,
+  .login p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .login-triangle {
+    width: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border: 12px solid transparent;
+    border-bottom-color: rgb(15, 66, 107);
+  }
+  
+  .login-header {
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .login-container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login p {
+    padding: 25px;
+  }
+  
+  .login input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+    outline: none;
+    background: rgba(247, 245, 245, 0);
+    border: 0px;
+    border-bottom: 2px solid white;
+
+  }
+  .login input::placeholder{
+    color: rgba(255, 255, 255, 0.897)
+
+  }
+  .login input[type="email"],
+  .login input[type="password"] {
+    outline-width: 0;
+
+  }
+  
+  
+  
+  .login input[type="submit"] {
+    background: #FB4C57;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .login input[type="submit"]:hover {
+    background: #17c;
+  }
+  
+  .login input[type="submit"]:focus {
+    border-color: #05a;
+  }
+
+  .has-error input[type="email"],
+.has-error input[type="password"] {
+    border-color: rgb(216, 12, 12);
+    color: rgb(230, 14, 14);
+}
+
+.login-container .mysubmitButton{
+    /* position: absolute; */
+    width: 89%;
+    /* bottom: 2%; */
+    margin: auto auto 1% auto;
+}
+
+
+.help-block{
+    width: 89%;
+    margin: 0 auto 0 auto;
+}
+
+#loginError{
+  color: #ffffff;
+  /* border: 1px solid white; */
+  padding: 0px;
+  width: 100%;
+  background: red;
+  position: absolute;
+  /* bottom: -15%; */
+  left: 0;
+  /* height: 5%; */
+  text-align: center;
+  /* margin: auto 0 auto 0; */
+  transition-duration: 0.5s;
+}
+
+@media only screen and (max-width: 1920px) {
+
+  .login{
+    width: 25%;
+ 
+    left: 35%;
+   
+  }
+
+ }
+ 
+ @media only screen and (max-width: 1370px) {
+
+ 
+  .login{
+    width: 25%;
+ 
+    left: 36%;
+   
+  }
+ }
+ @media only screen and (max-width: 1280px) {
+
+ 
+  .login{
+    height: 50%;
+    left: 36%;
+   
+  }
+  .login-container .mysubmitButton{
+    width: 70%;
+    margin: auto auto 1% auto;
+  }
+
+ }
+ @media only screen and (max-width: 1280px) {
+
+ 
+  .login{
+    height: 60%;
+    left: 34%;
+    width: 29%;
+
+  }
+
+
+ }
+ 

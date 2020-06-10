@@ -1,0 +1,94 @@
+[
+  {
+    "id": 2,
+    "name": "Java 15",
+    "created": "2020-05-18T18:54:28.1552044",
+    "manager": {
+      "id": 3,
+      "name": "Pieter Cappelle",
+      "gender": "Man",
+      "tasks": [
+        {
+          "id": 13,
+          "titel": "COnference",
+          "comments": [
+            {
+              "id": 2,
+              "text": "azezr",
+              "author": null,
+              "date": "2020-05-18T18:49:04.694"
+            }
+          ],
+          "state": 1,
+          "dateOfFinish": "2020-05-18T19:17:34.1147005",
+          "spentTime": 2
+        }
+      ],
+      "projects": [
+        {
+          "projectId": 2,
+          "employeeId": 3
+        }
+      ]
+    },
+    "employees": [
+      {
+        "projectId": 2,
+        "employeeId": 3,
+        "employee": {
+          "id": 3,
+          "name": "Pieter Cappelle",
+          "gender": "Man",
+          "tasks": [
+            {
+              "id": 13,
+              "titel": "COnference",
+              "comments": [
+                {
+                  "id": 2,
+                  "text": "azezr",
+                  "author": null,
+                  "date": "2020-05-18T18:49:04.694"
+                }
+              ],
+              "state": 1,
+              "dateOfFinish": "2020-05-18T19:17:34.1147005",
+              "spentTime": 2
+            }
+          ],
+          "projects": []
+        }
+      }
+    ],
+    "deadline": "2021-12-10T00:00:00",
+    "tasks": [
+      {
+        "id": 13,
+        "titel": "COnference",
+        "comments": [
+          {
+            "id": 2,
+            "text": "azezr",
+            "author": null,
+            "date": "2020-05-18T18:49:04.694"
+          }
+        ],
+        "employee": {
+          "id": 3,
+          "name": "Pieter Cappelle",
+          "gender": "Man",
+          "tasks": [],
+          "projects": [
+            {
+              "projectId": 2,
+              "employeeId": 3
+            }
+          ]
+        },
+        "state": 1,
+        "dateOfFinish": "2020-05-18T19:17:34.1147005",
+        "spentTime": 2
+      }
+    ]
+  }
+]

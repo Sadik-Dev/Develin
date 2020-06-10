@@ -1,0 +1,26 @@
+
+  <div class="login">
+      <div class="formContainerTop">
+        <h2 class="login-header">Log in</h2>
+
+      </div>
+    <form [formGroup]="loginForm" class="login-container" (ngSubmit)="onSubmit()">
+      <p [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
+        <input type="email" placeholder="Email" formControlName="email" data-cy="emailInput">
+      </p>
+      <div *ngIf="isSubmitted && formControls.email.errors" class="help-block">
+        <div *ngIf="formControls.email.errors.required">Email is required</div>
+      </div>
+      <p [ngClass]="{ 'has-error': isSubmitted && formControls.password.errors }">
+        <input type="password" placeholder="Password" formControlName="password" data-cy="passwordInput">
+      </p>
+      <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
+        <div *ngIf="formControls.password.errors.required">Password is required</div>
+      </div>
+      <p class="mysubmitButton">
+        <input type="submit" value="Log in" data-cy='submitlogin'>
+      </p>
+      <p *ngIf="loginerror" id="loginError" data-cy="loginerror">{{loginerror}}</p>
+    </form>
+    
+  </div>

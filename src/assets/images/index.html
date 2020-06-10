@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&amp;display=swap" rel="stylesheet">
+    <title>Develin</title>
+</head>
+<body>
+  <section class="dashboardProject">
+    <div class="flexCol">
+      <div class="headDash">
+        <div class="titleDash">
+          <img src="/graph.png" >
+          <p>Angular Dashboard</p>
+        </div>
+      
+      </div>
+      <div class="midDash"> 
+        <div class="CircleGraph">
+          <div class="circleGrapgIntro">
+            <img src="/icons8-pie-chart-96.png">
+            <p>Opdrachten Statistiek</p>
+          </div>
+          <div class="circleBody">
+            <div class="circleGraphContent">
+              <p>Top 3 </p>
+              <div class="pie" style="--segment1: 40; --segment2: 70; --segment3: 90"></div>
+  
+              
+            </div>
+            <div class="circleGraphLegend">
+              <div class="topCircleLegend">
+                <p>Medewerker</p>
+                <p>Opdrachten</p>
+            </div>
+            <div class="circleContentLegend">
+              <div class="cLegend">
+                <div>
+                  <div class="legendColor"></div>
+                  <p>Jan Pieters</p>
+                </div>
+              
+                <p>18</p>
+              </div>
+              <div class="cLegend">
+                <div>
+                  <div class="legendColor"></div>
+                  <p>Ismail Amrani</p>
+                </div>
+      
+                <p>12</p>
+              </div>
+              <div class="cLegend">
+                <div>
+                  <div class="legendColor"></div>
+                  <p>Hanna Van Daele</p>
+                </div>
+         
+                <p>6</p>
+              </div>
+              <div class="cLegend">
+                <div>
+                  <div class="legendColor"></div>
+                  <p>Andere medewerkers</p>
+                </div>
+         
+                <p>4</p>
+              </div>
+            </div>
+            </div>
+          </div>
+    
+        </div>
+        <div class="medewerkersLayer">
+          <div class="workersIntro">
+          <img src="/icons8-team-96.png">
+          <p>Medewerkers</p>
+          <div id="addWorker">
+          <img src="/plus.png">
+          </div>
+          <img src="/icons8-back-arrow-100 (1).png" id="backWorker">
+          </div>
+          <div class="workersList">
+
+            <div class="worker">
+              <div class="flexRow">
+                <img src="/icons8-male-user-50.png">
+                <p>Hans Peeters</p>
+              </div>
+           
+              <img src="/icons8-menu-vertical-90.png">
+            </div>
+           <div class="worker">
+              <div class="flexRow">
+                <img src="/icons8-male-user-50.png">
+                <p>Jansens Ligt</p>
+              </div>
+           
+              <img src="/icons8-menu-vertical-90.png">
+            </div>
+            <div class="worker">
+              <div class="flexRow">
+                <img src="/icons8-female-profile-50.png">
+                <p>Lisa Marzouki</p>
+              </div>
+           
+              <img src="/icons8-menu-vertical-90.png">
+            </div>
+            <div class="worker">
+              <div class="flexRow">
+                <img src="/icons8-female-profile-50.png">
+                <p>Lisa Marzouki</p>
+              </div>
+           
+              <img src="/icons8-menu-vertical-90.png">
+            </div>
+            <div class="worker">
+              <div class="flexRow">
+                <img src="/icons8-female-profile-50.png">
+                <p>Lisa Marzouki</p>
+              </div>
+           
+              <img src="/icons8-menu-vertical-90.png">
+            </div>
+          </div>
+          <div class="addAWorker">
+            <div class="disponibleWorkers">
+              <div class="worker">
+                <div class="flexRow">
+                  <img src="/icons8-male-user-50.png">
+                  <p>Hans Peeters</p>
+                </div>
+             
+                <p class="greenPlus"> +</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bigGraphDash">
+        <div id="curve_chart" style="width: 100%; height: 100%"></div>
+        <filter id="dropshadow" x="-2" y="-2" width="200" height="200">
+          <feGaussianBlur  stdDeviation="1"/>
+        </filter>
+        <div class="legend">
+          Aantal gewerkte uren
+        </div>
+      </div>
+    </div>
+
+    <div class="dashfloatPane">
+      <div class="floatTitle">
+        <img src="/icons8-info-96.png">
+        <p>Project Informatie</p>
+
+      </div>
+      <div class="firstpaneDash">
+        <div class="infoDash">
+          <img src="/icons8-user-100.png">
+
+          <div>
+            <p>Pieter Capelle</p>
+            <p>Manager</p>
+
+          </div>
+        </div>
+ 
+        <div class="infoDash">
+          <img src="/teamCol.png">
+
+          <div>
+            <p>4</p>
+            <p>Aantal medewerkers op het project</p>
+
+          </div>
+        </div>
+        <div class="infoDash">
+          <img src="/icons8-maintenance-date-100.png">
+
+          <div>
+            <p>27 December 2017</p>
+            <p>Project gemaakt op</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="floatTitle">
+        <img src="/icons8-tasks-96.png">
+        <p>Opdrachten</p>
+      </div>
+      <div class="secondPaneDash">
+
+        <div class="task">
+          <p>Network Maintenance</p>
+          <div class="status done"> 
+            <img src="/icons8-check-all-100.png">
+            <p>Done</p>
+          </div>
+          <div class="workersOnP">
+            <div class="workerOnP">
+              <p>os</p>
+            </div>
+            <div class="workerOnP">
+              <p>lm</p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="task">
+          <p>Module v13 Update</p>
+          <div class="status notDone">
+            <img src="/icons8-future-100.png">
+            <p>Processing</p>
+          </div>
+          <div class="workersOnP">
+            <div class="workerOnP">
+              <p>os</p>
+            </div>
+            <div class="workerOnP">
+              <p>lm</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="task">
+          <p>Module v13 Update</p>
+          <div class="status notDone">
+            <img src="/icons8-future-100.png">
+            <p>Processing</p>
+          </div>
+          <div class="workersOnP">
+            <div class="workerOnP">
+              <p>os</p>
+            </div>
+            <div class="workerOnP">
+              <p>lm</p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+      <div class="footerTasks">
+        <div>
+          <p>8</p>
+          <p>Totaal</p>
+        </div>
+
+        <div>
+          <p>6</p>
+          <p>Done</p>
+        </div>
+
+        <div>
+          <p>2</p>
+          <p>To Do</p>
+        </div>
+      </div>
+
+      <div class="taskFrame">
+        <div class="ovfh">
+          <div class="introTF">
+            <div>
+              <img src="/taskswhite.png">
+              <p>Network Maintenance</p>
+            </div>
+            <p id="closeTF">-</p>
+          </div>
+          <div class="contentTF">
+            <div class="workersOnTask">
+              <div class="workerOnT">
+                <p>os</p>
+                <span class="tooltiptext">Oussama Sadik</span>
+              </div>
+              <div class="workerOnT">
+                <p>lm</p>
+                <span class="tooltiptext">Lisa Marzouki</span>
+  
+              </div>
+            </div>
+            <div class="statusBar">
+              <p class="state done">Status: Done</p>
+              <div class="deleteButton">
+                <img src="/icons8-delete-128.png">
+                <p>delete</p>
+              </div>
+            </div>
+            
+            <div class="taskComments">
+  
+              <div class="comment">
+                <div class="cIntro">
+                  <div class="initials">
+                    os
+                  </div>
+                  <p>Oussama Sadik on 27/02/2018</p>
+  
+                </div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum </p>
+              </div>
+  
+              <div class="comment">
+                <div class="cIntro">
+                  <div class="initials">
+                    lm
+                  </div>
+                  <p>Lisa Marzouki on 01/02/2018</p>
+  
+                </div>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+              </div>
+            </div>
+            <div class="btnsNCF">
+              <div class="addCommentB">
+                <img src="/icons8-edit-128.png">
+                <p>Comment</p>
+              </div>
+              <div class="stateChanger">
+                <img src="/icons8-checked-checkbox-100.png">
+                  <p>Voltooid</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+       
+        <div class="addACommentFrame">
+          <div class="introNCF">
+            <img src="/icons8-edit-128.png">
+            <p>Write a new Comment</p>
+          </div>
+          <textarea></textarea>
+          
+          <button><img src="/editY.png"><p>Submit</p></button>
+          <div class="closeNCF">-</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="/main.js"> </script>
+</body>
+</html>

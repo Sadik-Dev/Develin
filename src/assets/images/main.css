@@ -1,0 +1,941 @@
+
+body{
+  background: -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(101,210,113,1)), color-stop(28%, rgba(113,216,105,1)), to(rgba(40,177,158,1)));
+  background: linear-gradient(90deg, rgba(101,210,113,1) 8%, rgba(113,216,105,1) 28%, rgba(40,177,158,1) 100%);  margin: 0 0 0 0;
+  font-family: 'Comfortaa';
+  overflow: hidden;
+}
+.dashboardProject{
+  background:url("/backvect.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 2% 0 0 0;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.55);
+
+}
+.flexCol{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 100%;
+}
+.headDash{
+  width: 100%;
+  height: 5%;
+}
+.midDash{
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: row;
+  z-index: 5;
+}
+.bigGraphDash{
+  width: 95%;
+  height: 44%;
+  background: rgba(0, 0, 0, 0);
+  margin: auto auto auto auto;
+  border-radius: 10px;
+  position: relative;
+ /* box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.55);*/
+
+}
+.graphDash{
+  width: 100%;
+  height: 50%;
+}
+.dashfloatPane{
+  width: 25%;
+  background: #F1F2F8;
+  height: 93%;
+  right: 1%;
+  margin: auto 1% auto 0;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.55);
+    z-index: 5;
+    position: relative;
+}
+
+.titleDash{
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 2%;
+  font-size: 1.2em;
+  color: white;
+}
+.titleDash img{
+  width: 25px;
+  height: 25px;
+  margin: auto 5px auto 0;
+}
+.firstpaneDash{
+  width: 100%;
+  height: 25%;
+  margin-top: 0%;
+}
+.infoDash{
+  display: flex;
+  flex-direction: row;
+  margin: 0% auto 3% auto;
+  background: white;
+  border-radius: 10px;
+  height: 27%;
+  width: 90%;
+  user-select: none;
+}
+.infoDash p{
+  margin: 0 0 0 0;
+}
+.infoDash div{
+  display: flex;
+  flex-direction: column;
+  margin: auto 0 auto 2%;
+}
+
+.infoDash div p:nth-child(2){
+  font-size: 0.7em;
+  color: rgba(0, 0, 0, 0.774);
+}
+.infoDash img{
+  width: 40px;
+  height: 40px;
+  margin: auto 1% auto 4%;
+}
+.CircleGraph{
+  background: white;
+  width: 40%;
+  height: 90%;
+  margin: auto 0 0 2%;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.55);
+z-index: 2;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgb(0,0,0);
+background: linear-gradient(121deg, rgba(0,0,0,1) 0%, rgba(9,9,9,1) 45%, rgba(19,19,19,1) 72%, rgba(26,26,26,1) 100%);
+  
+}
+.medewerkersLayer{
+  background: #009D55;
+  background: rgb(0,157,85);
+background: linear-gradient(121deg, rgba(0,157,85,1) 0%, rgba(0,150,98,1) 45%, rgba(0,143,109,1) 72%, rgba(0,136,118,1) 100%);
+  width: 52%;
+  height: 90%;
+  margin: auto auto 0 auto;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.55);
+
+  border-radius: 20px;
+  overflow: hidden;
+}
+.circleGrapgIntro{
+  display: flex;
+  flex-direction: row;  
+  height: 10%;
+  margin: 2% 0 0 4%;
+}
+
+.circleGrapgIntro img{
+  width: 30px;
+  height: 30px;
+  margin: auto 0 auto 0;
+}
+.circleGrapgIntro p{
+  margin: auto 0 auto 1%;
+  font-size:  0.9em;
+  color: white;
+}
+.circleGraphContent{
+  width: 40%;
+  height: 80%;
+}
+.circleGraphContent p{
+  font-weight: 700;
+  font-size: 1.1em;
+  margin: 18% 0 0 12%;
+  text-align: left;
+  color: white;
+}
+.pie {
+  display: inline-block;
+  width:  10em;
+  height: 10em;
+  border-radius: 50%;
+  margin: 15% 0 0 7%;
+  border: .15em solid rgba(255, 255, 255, 0);
+  box-shadow: 0 .075em .2em .05em rgba(0,0,0,.25);
+  background-origin: border-box; 
+  background-image: conic-gradient(
+    #3C84E2 0 calc(3.6deg * var(--segment1)),
+    #fc3  calc(3.6deg * var(--segment1)) calc(3.6deg * var(--segment2)) ,
+    #E55237 calc(3.6deg * var(--segment2))  calc(3.6deg * var(--segment3)),
+    #009D55 0 
+  );
+}
+
+.circleGraphLegend{
+  width: 60%;
+  height: 100%;
+  color: white;
+}
+.topCircleLegend{
+  display: flex;
+  flex-direction: row;
+  font-weight: 700;
+  font-size: 1.1em;
+  text-align: left;
+  justify-content: space-between;
+  margin-right: 0%;
+  width: 90%;
+  margin-top: 7%;
+}
+.circleContentLegend{
+  width: 80%;
+  margin-left: 6%;
+}
+.circleBody{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  
+}
+.cLegend{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 9% 0 0;
+  position: relative;
+}
+.cLegend p{
+  margin: auto 0 auto 0%;
+}
+.cLegend div{
+  display: flex;
+  flex-direction: row;
+}
+.cLegend div p{
+  margin: 0 0 0;
+}
+.legendColor{
+  background: #009D55;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: -7%;
+  top: 30%;
+  border-radius: 100%;
+}
+.cLegend:nth-child(1) .legendColor{
+  background: #3C84E2;
+}
+.cLegend:nth-child(2) .legendColor{
+  background: #fc3;
+}
+.cLegend:nth-child(3) .legendColor{
+  background: #E55237;
+}
+.chart {
+  background: rgba(255, 255, 255, 0);
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+ padding-bottom: 130px;
+left: -50%;
+position: absolute;
+}
+#curve_chart{
+  position: absolute;
+  left :-1%;
+  top:  -2%;
+z-index: 1;
+transform: scale(1.35);
+}
+.legend{
+  position: absolute;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  top: 4%;
+  left: 0%;
+  text-shadow: black 0px 1px 5px;
+}
+#customShadow   {
+  filter:
+
+  drop-shadow(2px 2px 5px rgb(0,0,0,0.2))
+  drop-shadow(7px 7px 15px rgb(0, 0, 0,2))
+
+  drop-shadow(30px 30px 15px rgb(0, 0, 0,2))
+  drop-shadow(20px 20px 15px rgb(0, 0, 0,2))
+
+  drop-shadow(25px 25px 15px rgb(0, 0, 0,0.2))
+  drop-shadow(30px 30px 15px rgb(0, 0, 0,0.2))
+  drop-shadow(35px 35px 15px rgb(0, 0, 0,0.2))
+  drop-shadow(40px 40px 15px rgb(0, 0, 0,0.2))
+  drop-shadow(50px 50px 15px rgb(0, 0, 0,0.2))
+  drop-shadow(60px 60px 15px rgb(0, 0, 0,0.1))
+  drop-shadow(70px 70px 15px rgb(0, 0, 0,0.1))
+  drop-shadow(80px 80px 15px rgb(0, 0, 0,0.1))
+
+  ;
+  position: absolute;
+  left :-3%;
+  top:  -2%;
+z-index: 0;
+transform: scale(1.35);
+
+}
+  .workersIntro{
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    margin: 2% 0 0 4%;
+    position: relative;
+  }
+  .workersIntro img{
+    width: 32px;
+    height: 35px;
+    margin: auto 0 auto 0;
+  }
+  .workersIntro p{
+    margin: auto 0 auto 1%;
+    font-size: 0.9em;
+    color: white;
+    font-weight: 600;
+  }
+  .workersList{
+    width: 92%;
+    height: 70%;
+    margin: 5% auto 0% auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    transition-duration: 0.5s;
+  }
+  /* width */
+::-webkit-scrollbar {
+  width: 5px;
+  margin-left: 2%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+  .worker{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 22%;
+    background: black;
+    margin: 0% 0 2% 0;
+    border-radius: 10px;
+    min-height: 20%;
+    justify-content: space-between;
+    width: 95%;
+    user-select: none;
+    transition-duration: 0.5s;
+  }
+  .flexRow{
+    display: flex;
+    flex-direction: row;
+  }
+  .worker >img{
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
+    margin: auto 2% auto 0;
+  }
+  .worker >img:hover{
+    cursor: pointer;
+  }
+  .worker div{
+    width: 80%;
+  }
+  .worker div p{
+    margin: auto 0 auto 0;
+    font-weight: 700;
+    color: white;
+  }
+  .worker div img{
+    width: 45px;
+    height: 45px;
+    margin: auto 2% auto 2%;
+  }
+#addWorker{
+  background: white;
+  color: #009D55;
+  position: absolute;
+  right: 4.9%;
+  top: 2%;
+  font-size: 2.5em;
+  margin: 0 0 0 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.55);
+
+}
+#backWorker{
+  color: #009D55;
+  position: absolute;
+  right: 4.9%;
+  top: 2%;
+  margin: 0 0 0 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  display: none;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.55);
+}
+#addWorker:hover, #backWorker:hover{
+  cursor: pointer;
+}
+#addWorker img{
+  color: #009D55;
+  margin: auto auto auto auto;
+  position: absolute;
+user-select: none;
+width: 100%;
+height: 100%;
+}
+.secondPaneDash{
+  background: linear-gradient(121deg, rgba(0,0,0,1) 0%, rgba(9,9,9,1) 45%, rgba(19,19,19,1) 72%, rgba(26,26,26,1) 100%);
+  background: #f1f1f1;
+  height: 46%;
+  width: 90%;
+  margin: auto auto auto auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.secondPaneDash::-webkit-scrollbar {
+  width: 5px;
+  margin-left: 8%;
+  height: 95%;
+}
+
+/* Track */
+.secondPaneDash::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* Handle */
+.secondPaneDash::-webkit-scrollbar-thumb {
+  background: #3C84E2;
+  width: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.task{
+background: #3C84E2;
+  width: 97%;
+  height: 18%;
+  min-height: 20%;
+  margin: 0% auto 4% 1%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  user-select: none;
+}
+.task:hover{
+  cursor: pointer;
+}
+.task p{
+  width: 60%;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 2% 2% auto 3%;
+  color: white;
+}
+.task .status{
+width: 20%;
+display: flex;
+flex-direction: column;
+margin: 4% 2% 0 auto;
+height: 100%;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+
+}
+.task .status p{
+  font-size: 0.7em;
+  font-weight: 700;
+  width: 90%;
+  text-align: center;
+  color: white;
+
+}
+.task img{
+  width: 25px;
+  height: 25px;
+  margin: 10% auto 6% auto;
+}
+.floatTitle{
+  display: flex;
+  flex-direction: row;
+  height: 3%;
+  margin: 6% 0 6% 5%;
+}
+.floatTitle img{
+width: 25px;
+height: 25px;
+margin:  auto 2% auto 0;
+
+}
+.floatTitle p{
+  margin:  auto 0 auto 0;
+}
+.addAWorker{
+  width: 92%;
+  height: 70%;
+  margin: 4% auto auto auto;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.disponibleWorkers{
+height: 80%;
+}
+.disponibleWorkers .worker{
+  background: #fc3;
+  color: black;
+}
+
+.disponibleWorkers .worker div p{
+  color: black;
+}
+.greenPlus{
+  font-size: 3em;
+  margin: 0 2% 0 0;
+  color: rgb(5, 129, 71);
+  text-shadow: rgba(0, 0, 0, 0.219) 0 1px 5px ;
+}
+.greenPlus:hover{
+  transition-duration: 0.5s;
+  color: white;
+  cursor: pointer;
+}
+
+.workerOnP{
+  background: rgb(255, 255, 255);
+
+  width: 28px;
+  height: 28px;
+  overflow: hidden;
+  display: flex;
+margin-right: 3%;
+  border-radius: 100%;
+
+}
+.workersOnP{
+  top: 50%;
+  left: 4%;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.workerOnP p {
+  line-height: 1.7em;
+  font-weight: 600;
+  width: 100%;
+  font-size: 1em;
+  text-align: center;
+  color: #000000;
+}
+.footerTasks{
+  position: absolute;
+  bottom: 2%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 5%;
+  justify-content: space-around;}
+.footerTasks div{
+  width: 20%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+
+}
+
+
+.footerTasks div p:nth-child(1){
+  font-size: 1.4em;
+  margin: 5% auto 3% auto;
+  text-align: center;
+  font-weight: 700;
+  color: #3C84E2;
+}
+.footerTasks div p:nth-child(2){
+  font-size: 0.7em;
+  line-height: 0.5em;
+  margin: 0 auto 20% auto;
+  text-align: center;
+  font-weight: 600;
+  color: black;
+
+}
+.taskFrame{
+  background: black;
+  position: absolute;
+  width:0%;
+  height: 58%;
+  top: 40%;
+  box-shadow: -15px -0px 15px 0px rgba(0,0,0,0.45);
+  transition-duration: 0.5s;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  transition-duration: 0.5s;
+  border: 2px solid #f1f1f1;
+  border-right: 0px solid white;
+  right: 99%;
+  display: flex;
+  flex-direction: column;
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);}
+.introTF{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+}
+.contentTF{
+  height: 85%;
+  width: 100%;
+}
+.introTF div {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  color: white;
+}
+.introTF div img{
+  width: 35px;
+  margin: auto 0 auto 4%;
+  height: 40px;
+}
+.introTF div p{
+  margin: auto 0 auto 2%;
+  font-size: 1.2em;
+}
+#closeTF{
+  color: white;
+  font-size: 5em;
+  line-height: 0.6em;
+  margin: 0 4% 0 0;
+  user-select: none;
+}
+#closeTF:hover{
+  cursor: pointer;
+}
+.workersOnTask{
+  display: flex;
+  flex-direction: row;
+  height: 15%;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+.workerOnT{
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  background: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+.workerOnT p{
+margin: 0 0 0 0;
+line-height: 1.7em;
+font-size: 1.1em;
+  user-select: none;
+}
+.workerOnT .tooltiptext {
+  visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.63);
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 0.9em;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  margin-top: 2%;
+  z-index: 1;
+}
+.workerOnT:hover .tooltiptext {
+  visibility: visible;
+  cursor: pointer;
+}
+.state{  
+  margin-left: 5%;
+  width: 25%;
+  padding: 2px;
+  font-size: 0.8em;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-top: 1%;
+  line-height: 1.5em;
+  text-align: center;
+  user-select: none;
+}
+.done{
+  background: #009D55;
+  color: white;
+}
+.notDone{
+  background: #E55237;
+  color: white;
+}
+.taskComments{
+  background: #f1f1f1;
+  height: 50%;
+  width: 91%;
+  margin: 4% auto 0 auto;
+  overflow-y: scroll;
+}
+.taskComments::-webkit-scrollbar-thumb {
+  background: #009D55 ;
+}
+.comment{
+  width: 100%;
+  background: #3C84E2;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.comment > p{
+  color: white;
+  margin: 2% 2% 2% 2%;
+  font-size: 0.9em;
+}
+.deleteButton{
+  display: flex;
+  flex-direction: row;
+  background: rgb(229, 55, 55);
+  height: 15%;
+  padding: 1px;
+  width: 20%;
+  border-radius: 10px;
+  user-select: none;
+  border: 1px solid rgb(229, 55, 55);
+}
+.deleteButton:hover{
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transform: scale(1.05);
+  border: 1px solid white;
+}
+.deleteButton img{
+  width: 20px;
+  height: 20px;
+  margin: auto 0% auto 2%;
+  opacity: 0.5;
+}
+.deleteButton p{
+  margin: auto 0% auto 5%;
+  font-size: 0.9em;
+  color: white;
+}
+.statusBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+
+}
+.cIntro{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+}
+.cIntro p{
+  color: rgba(255, 255, 255, 0.945);
+  font-size: 0.8em;
+  margin: 2% 2% 2% 2%;
+}
+.initials{
+  background: white;
+  font-size: 1em;
+  font-weight: 600;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 1.5em;
+  border-radius: 100%;
+  margin-left: 2%;
+  
+}
+.addCommentB{
+  background: #fc3;
+  color: black;
+  width: 30%;
+  margin: 5% 0 0 0%;
+  padding: 5px;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  border: 2px solid #fc3;
+}
+.addCommentB:hover{
+  cursor: pointer;
+  transition-duration: 0.5s;
+  background-color: rgba(255, 204, 51, 0.76);
+}
+.addCommentB img{
+  width: 20px;
+  height: 20px;
+  margin: auto 2% auto 2%;
+}
+.addCommentB p{
+  margin: auto 0 auto 0;
+  text-align: center;
+  user-select: none;
+  font-weight: 700;
+}
+.addACommentFrame{
+  width: 0%;
+  height: 100%;
+  background: #f1f1f1;
+  position: absolute;
+  right: 99%;
+  z-index: -2;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: -15px -0px 15px 0px rgba(0,0,0,0.45);
+  border: 1px solid #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+.introNCF{
+  display: flex;
+  flex-direction: row;
+  margin: 3% 0 0 3%;
+  user-select: none;
+}
+.introNCF img{
+  width: 35px;
+  height: 35px;
+  margin: 0 1% 0 0;
+}
+.addACommentFrame textarea{
+  width: 90%;
+  height: 60%;
+  margin: 5% auto 0 4%;
+  resize: none;
+  border: 1px solid black;
+}
+.addACommentFrame button{
+  width: 32%;
+  margin: 7% 0 0 4%;
+  border-radius: 15px;
+  background:black;
+  color: #fc3;
+  font-weight: 700;
+  font-family: 'Comfortaa','Calibri';
+  padding: 5px;
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.addACommentFrame button img{
+  width: 20px;
+  height: 20px;
+  margin: 0 2% 0 2%;
+}
+.addACommentFrame button p {
+  margin: 0 auto 0 10%;
+}
+.addACommentFrame button:hover{
+  transition-duration: 0.5s;
+  cursor: pointer;
+  border: 2px solid #fc3;
+}
+.addACommentFrame button:focus, textarea:focus {outline:0;}
+.closeNCF{
+  position: absolute;
+  color: black;
+  font-size: 5em;
+  margin: 0 0 0 0;
+  right: 6%;
+  top: -5%;
+}
+.closeNCF:hover{
+  cursor: pointer;
+}
+.ovfh{
+  overflow: hidden;
+}
+.stateChanger{
+  background: rgb(0, 0, 0);
+  width: 25%;
+  display: flex;
+  background: #E55237;
+  color: white;
+  width: 30%;
+  margin: 5% 0 0 5%;
+  padding: 5px;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  border: 2px solid #E55237;
+}
+.stateChanger p{
+  margin: auto 0 auto 0;
+  text-align: center;
+  user-select: none;
+  font-weight: 700;
+}
+
+.stateChanger img{
+  height: 20px;
+  width: 20px;
+  margin: auto 5% auto 2%;
+}
+.stateChanger:hover{
+  cursor: pointer;
+  transition-duration: 0.5s;
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0);
+}
+.btnsNCF{
+  display: flex;
+  flex-direction: row;
+  width: 91%;
+  margin: 0 auto 0 auto;
+  justify-content: space-between;
+}
