@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  apiUrl: '/api',
-  myEndpoint: 'https://develinapi.azurewebsites.net/api',
-  port: 44343
+  apiUrl: 'http://localhost:5000/api',
+  myEndpoint: 'https://localhost:5001',
+  port: 5001
 };
 
 /*
