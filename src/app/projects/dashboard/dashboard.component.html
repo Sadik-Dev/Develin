@@ -22,60 +22,28 @@ data-cy="appConfirmation"
         </div>
       </div>
       <div class="midDash" > 
-        <div class="CircleGraph">
-          <div class="circleGrapgIntro">
-            <img src="assets/images/icons8-pie-chart-96.png">
-            <p >Opdrachten Statistiek</p>
+        <div class="filesLayer">
+          <div class="filesHead">
+          <img src="assets/images/attachment.png">
+          <p>Attachments</p>
+          <div id="addFile" data-cy="addFile" (click)="showWorkersFrame()" *ngIf="isManager()">
+          <img src="assets/images/plus.png">
           </div>
-          <div class="circleBody">
-            <div class="circleGraphContent">
-              <p>Top 3 </p>
-              <div class="pie" style="--segment1: 40; --segment2: 70; --segment3: 90"></div>
-  
-              
-            </div>
-            <div class="circleGraphLegend">
-              <div class="topCircleLegend">
-                <p>Medewerker</p>
-                <p>Opdrachten</p>
-            </div>
-            <div class="circleContentLegend">
-              <div class="cLegend">
-                <div>
-                  <div class="legendColor"></div>
-                  <p>Jan Pieters</p>
-                </div>
-              
-                <p>18</p>
+          <img src="assets/images/icons8-back-arrow-100 (1).png" id="backWorker"  (click)="showWorkersOnTheProject()">
+          </div>
+          <div class="filesList" >
+
+            <div data-cy="workersOnP" class="file" *ngFor="let worker of project.employees; trackBy:identify">
+              <div class="flexRow">
+                
+                <img *ngIf="worker.gender === 'Man'; else elseBlock" src="/assets/images/icons8-male-user-50.png">
+                <ng-template #elseBlock>  <img #elseBlock src="/assets/images/icons8-female-profile-50.png"></ng-template>
+                <p>{{worker.name}}</p>
               </div>
-              <div class="cLegend">
-                <div>
-                  <div class="legendColor"></div>
-                  <p>Ismail Amrani</p>
-                </div>
-      
-                <p>12</p>
-              </div>
-              <div class="cLegend">
-                <div>
-                  <div class="legendColor"></div>
-                  <p>Hanna Van Daele</p>
-                </div>
-         
-                <p>6</p>
-              </div>
-              <div class="cLegend">
-                <div>
-                  <div class="legendColor"></div>
-                  <p>Andere medewerkers</p>
-                </div>
-         
-                <p>4</p>
-              </div>
-            </div>
+           
+              <div class="optionWorker" (click)="removeEmployee(worker.id)"></div>
             </div>
           </div>
-    
         </div>
         <div class="medewerkersLayer">
           <div class="workersIntro">
@@ -116,15 +84,7 @@ data-cy="appConfirmation"
           </div>
         </div>
       </div>
-      <div class="bigGraphDash">
-        <div id="curve_chart" style="width: 100%; height: 100%"></div>
- 
-        <div class="legend">
-          Aantal gewerkte uren
-        </div>
-        <p class="totaalUren"> </p>
-
-      </div>
+    
     </div>
 
     <div class="dashfloatPane">

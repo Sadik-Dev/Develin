@@ -1,6 +1,8 @@
 import { Component, OnInit, Output, Input } from '@angular/core';
 import { ProjectDataService } from '../project-data.service';
 import { Employee } from '../projects/employee.model';
+import { DevelinService } from 'src/app/projects/develin.service';
+
 declare var loadEvents;
 
 @Component({
@@ -13,8 +15,9 @@ export class MenuComponent implements OnInit {
   @Input()
   public loggedInUser: Employee;
   public newProjectFrameIsOpen = false;
+  public isUserManagerOpen = false;
 
-  constructor(private _projectDataService: ProjectDataService) {
+  constructor(private _projectDataService: ProjectDataService, private _develinService: DevelinService) {
    }
 
   ngOnInit(): void {
@@ -37,9 +40,12 @@ export class MenuComponent implements OnInit {
     this.newProjectFrameIsOpen = true;
     let frame : any =  document.getElementsByClassName("hi")[0];
     frame.style.display = "flex";
-
- 
   }
+
+  openUserManager(){
+    this._develinService.isUserManagerOpen = true;
+  }
+
 
 
 

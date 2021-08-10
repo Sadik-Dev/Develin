@@ -400,10 +400,10 @@ font-family: 'Montserrat', cursive;
 @media only screen and (max-width: 1440px) {
 
   .project{
-    width: 45%;
+    width: 35%;
     background-size: contain;
     background-repeat: round;
-    height: 40%;
+    height: 43%;
   }
   .layer{
     height: 80vh;

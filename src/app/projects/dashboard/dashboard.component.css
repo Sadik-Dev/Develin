@@ -96,8 +96,8 @@
     color: rgba(0, 0, 0, 0.774);
   }
   .infoDash img{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin: auto 1% auto 4%;
   }
   .CircleGraph{
@@ -125,6 +125,66 @@
     border-radius: 20px;
     overflow: hidden;
   }
+  .filesLayer{
+    background: #F1F2F8;
+    width: 40%;
+    height: 80%;
+    margin: auto auto auto auto;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.55);
+  
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .filesHead{
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    margin: 4% 0 0 4%;
+    position: relative;
+    color: black;
+    justify-content: center;
+  }
+  .filesHead img{
+    width: auto;
+    height: 25px;
+    display: flex;
+    margin-right: 5px;
+  }
+  .filesHead p{
+    font-size: 0.9em;
+    color: black;
+    font-weight: 600;
+    height: fit-content;
+    margin: auto auto auto 0;
+  }
+  .filesLayer .file{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 22%;
+    background: #FFFFFF;
+    margin: 0% 0 2% 0;
+    border-radius: 10px;
+    min-height: 28%;
+    justify-content: space-between;
+    width: 95%;
+    user-select: none;
+    transition-duration: 0.5s;
+  }
+  .filesList{
+    width: 92%;
+    height: 70%;
+    margin: 5% auto 0% auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    transition-duration: 0.5s;
+  }   
+    /* Handle */
+    .filesList::-webkit-scrollbar-thumb {
+      background: white;
+    }
+    
   .circleGrapgIntro{
     display: flex;
     flex-direction: row;  
@@ -179,7 +239,6 @@
     display: flex;
     flex-direction: row;
     font-weight: 700;
-    font-size: 1.1em;
     text-align: left;
     justify-content: space-between;
     margin-right: 0%;
@@ -290,17 +349,18 @@
       height: 10%;
       margin: 2% 0 0 4%;
       position: relative;
+      justify-content: center;
     }
     .workersIntro img{
       width: 32px;
       height: 35px;
-      margin: auto 0 auto 0;
+      margin-right: 5px;
     }
     .workersIntro p{
-      margin: auto 0 auto 1%;
       font-size: 0.9em;
       color: white;
       font-weight: 600;
+      margin-right: auto;
     }
     .workersList{
       width: 92%;
@@ -339,7 +399,7 @@
       background: black;
       margin: 0% 0 2% 0;
       border-radius: 10px;
-      min-height: 20%;
+      min-height: 28%;
       justify-content: space-between;
       width: 95%;
       user-select: none;
@@ -382,6 +442,20 @@
       width: 45px;
       height: 45px;
       margin: auto 2% auto 2%;
+    }
+    #addFile{
+      background: white;
+      color: #F1F2F8;
+      position: absolute;
+      right: 4.9%;
+      top: 2%;
+      font-size: 2.5em;
+      margin: 0 0 0 0;
+      width: 35px;
+      height: 35px;
+      border-radius: 100%;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.55);
+    
     }
   #addWorker{
     background: white;
@@ -459,7 +533,7 @@
     background: #3C84E2;
     width: 99%;
     height: 18%;
-    min-height: 20%;
+    min-height: 25%;
     margin: 1% auto 4% 1%;
     overflow: hidden;
     display: -webkit-box;
@@ -511,15 +585,17 @@
     flex-direction: row;
     height: 3%;
     margin: 6% 0 6% 5%;
+    align-items: center;
   }
   .floatTitle img{
-  width: 25px;
-  height: 25px;
-  margin:  auto 2% auto 0;
+    width: 25px;
+    height: 25px;
+    /* margin: auto 2% auto 0; */
+    margin-right: 5px;
   
   }
   .floatTitle p{
-    margin:  auto 0 auto 0;
+
   }
   .addAWorker{
     width: 92%;
@@ -1060,7 +1136,7 @@
   .addTask{
     display: flex;
     background: rgba(0, 157, 84, 0);
-    width: 33%;
+    width: 40%;
     min-width: 32%;
     padding: 2px;
     border-radius: 2px;
@@ -1086,7 +1162,7 @@
     width: max-content;
     margin: 0 0 0 0;
     color: #009D55;
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: 700;
     height: auto;
     margin: auto auto 4% auto;

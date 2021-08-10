@@ -11,7 +11,7 @@
     <p>New Project</p>
 </div>
 
-<div class="taskIcon item" *ngIf="isManager()">
+<div class="taskIcon item" *ngIf="isManager()" (click)="openUserManager()"> 
     <img src="assets/images/user.png">
     <p>User Manager</p>
 </div>

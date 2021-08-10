@@ -4,6 +4,7 @@ import { ProjectDataService } from '../project-data.service';
 import {Subject, Observable} from 'rxjs';
 import { distinctUntilChanged, debounceTime, map, filter} from 'rxjs/operators';
 import { Employee } from '../projects/employee.model';
+import { DevelinService } from 'src/app/projects/develin.service';
 declare var  openDashboardJS;
 declare var loadEvents;
 
@@ -19,10 +20,9 @@ export class ProjectListComponent implements OnInit {
   private _fetchProjects$: Observable<Project[]> = this._projectDataService.allProjects$;
   public filterProject$ = new Subject<string>();
   public selectedProject : Project;
-  
   public loggedInUser : Employee;
 
-  constructor(private _projectDataService: ProjectDataService) { 
+  constructor(private _projectDataService: ProjectDataService, private _develinService: DevelinService) { 
     this.filterProject$
     .pipe(
       distinctUntilChanged(),
@@ -53,7 +53,10 @@ export class ProjectListComponent implements OnInit {
     this.selectedProject = await pjs.find(p => p.id == id);
   });
   openDashboardJS(this.selectedProject);
+  }
 
+  isUserManagerOpen(){
+    return this._develinService.isUserManagerOpen;
   }
 
   

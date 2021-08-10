@@ -15,9 +15,10 @@ import { ProjectsRoutingModule } from './project-routing.module';
 import { AuthenticationInterceptor } from '../http-interceptors/AuthenticationInterceptor';
 import { AuthGuard } from '../AuthGuard/AuthGuard';
 import { MenuComponent } from './menu/menu.component';
+import { UserManagerComponent } from './user-manager/user-manager.component';
 
 @NgModule({
-  declarations: [ProjectsComponent, ProjectListComponent, NewProjectComponent, ProjectFilterPipe, DashboardComponent, NewTaskComponent,MenuComponent],
+  declarations: [ProjectsComponent, ProjectListComponent, NewProjectComponent, ProjectFilterPipe, DashboardComponent, NewTaskComponent,MenuComponent, UserManagerComponent],
   imports: [
     CommonModule,
     FormsModule,

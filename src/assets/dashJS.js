@@ -2,7 +2,6 @@
 
 async  function drawChart(project) {
   let monthStrings =  getPrecedentMonths();
-
   let hours = [0 , 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
   let doneTasks = project.tasks.filter(t => t.state == 1);
@@ -109,10 +108,10 @@ await  chart.draw(data, options);
    //Animation
   console.log("openend by ");
 
-   document.getElementById("dashboardP").style.top = "2%";
+   document.getElementById("dashboardP").style.top = "3%";
    document.getElementById("dashboardP").style.left = "0%";
    document.getElementById("dashboardP").style.width = "100%";
-   document.getElementById("dashboardP").style.height = "95vh";
+   document.getElementById("dashboardP").style.height = "99vh";
 
 
   let navItems = document.querySelectorAll(".item");
@@ -121,12 +120,9 @@ await  chart.draw(data, options);
     
   }
   
-  await google.charts.load('current', {'packages':['corechart']});
+  /*await google.charts.load('current', {'packages':['corechart']});
   google.charts.setOnLoadCallback(drawChart(project));
-
-
-
-   
+  */
 }
 
 function ShowWorkersOnProjectJS(){

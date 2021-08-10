@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+:root{
+    --primary: #28B19E;
+}
+.overlay{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.323);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    font-family: 'Comfortaa', cursive;
+
+}
+.userManager{
+    width: 100%;
+    height: 90vh;
+    background: #F4F4F4;
+}
+.header{
+    height: 90px;
+    background: white;
+    display: flex;
+}
+#toolLogo{
+    height: 50px;
+    margin-right: 10px;
+}
+.intro{
+    display: flex;
+    margin-right: auto;
+    margin-left: 25px;
+    color: #666666;
+    text-transform: none;
+    opacity: .9;
+}
+h2{
+    font-size: 1.3em;
+    margin: auto;
+}
+.search{
+    position: relative;
+    width: fit-content;
+    margin: auto 5% auto 0;
+}
+.search img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5px;
+    margin: auto;
+    height: 60%;
+    opacity: .8;
+}
+.search input{
+    width: 250px;
+    height: 30px;
+    border: 0px solid #66666693;
+    font-size: 1.1em;
+    padding: 3px 7px 3px 7px;
+    background: #b9b5b531;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.699);
+}
+.search input::placeholder{
+    font-size: .9em;
+}
+input:focus{
+    outline: none;
+}
+.userType{
+    width: 140px;
+    display: flex;
+    position: relative;
+    margin: auto 5% auto 0;
+    border: 1px solid #afadad;
+    height: 15px;
+    align-items: flex-start;
+    padding: 10px 0px 10px 0px;
+    color: #666666;
+    font-size: 1em;
+    line-height: 1.1em;
+    border-radius: 3px;
+    user-select: none;
+    flex-direction: column;
+}
+.userType img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5%;
+    margin: auto;
+    height: 60%;
+    opacity: .8;
+}
+.userType .container{
+    width: 100%;
+}
+.userType p{
+    margin: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.userType:hover{
+    cursor: pointer;
+}
+.boxHidden{
+    display: none;
+}
